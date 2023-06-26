@@ -7,6 +7,8 @@
             Console.WriteLine("Enter 1 Fobonacci Serise");
             Console.WriteLine("Enter  2 for Perfect Number");
             Console.WriteLine("Enter 3 for Prime Number");
+            Console.WriteLine("Enter 4 for Reverse a Number");
+
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             switch (choice)
@@ -22,6 +24,10 @@
                 case 3:
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.GetPrimeNumber();
+                    break;
+                case 4:
+                    ReverseANumber reverseANumber = new ReverseANumber();
+                    reverseANumber.ReverseAN0();
                     break;
                 default:
                     Console.WriteLine("Enter a Valid choice");
