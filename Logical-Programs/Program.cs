@@ -8,7 +8,7 @@
             Console.WriteLine("Enter  2 for Perfect Number");
             Console.WriteLine("Enter 3 for Prime Number");
             Console.WriteLine("Enter 4 for Reverse a Number");
-
+            Console.WriteLine("Enter 5 for Ramdom Coupon Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             switch (choice)
@@ -28,6 +28,10 @@
                 case 4:
                     ReverseANumber reverseANumber = new ReverseANumber();
                     reverseANumber.ReverseAN0();
+                    break;
+                case 5:
+                    CouponNumber couponNumber = new CouponNumber();
+                    couponNumber.GetUniqueCooponNo();
                     break;
                 default:
                     Console.WriteLine("Enter a Valid choice");
